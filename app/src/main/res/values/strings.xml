@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AgriApoio</string>
+    <string name="title_activity_post_list">PostListActivity</string>
+    <string name="title">Titulo</string>
+    <string name="data">Data</string>
+    <string name="hour">Hora</string>
+    <string name="temp">Temperatura</string>
+    <string name="location">Local</string>
+    <string name="description">Descrição</string>
+    <string name="image">Imagem</string>
+    <string name="title_register">Registros</string>
+    <string name="search">Pesquisar</string>
+    <string name="detail">Detalhe</string>
+    <string name="settings">Ondernar</string>
+    <string name="add">Adicionar</string>
+    <string name="hintTitle">Digite o Titulo</string>
+    <string name="hintDescription">Digite a Descrição</string>
+</resources>
