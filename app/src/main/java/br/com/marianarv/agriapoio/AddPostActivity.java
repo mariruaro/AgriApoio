@@ -33,6 +33,7 @@ public class AddPostActivity extends AppCompatActivity {
 
     String storagePath = "All_Images_Uploads/";
     String databasePath = "Data";
+    int cameraOrFile=0;
 
     Uri mFilePathUri;
 
@@ -63,6 +64,7 @@ public class AddPostActivity extends AppCompatActivity {
         mImagePost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                cameraOrFile=1;
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
@@ -146,7 +148,6 @@ public class AddPostActivity extends AppCompatActivity {
 
             try{
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(),mFilePathUri);
-
                 mImagePost.setImageBitmap(bitmap);
             }catch (Exception e){
                 Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();

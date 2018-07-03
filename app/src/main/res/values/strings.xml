@@ -10,9 +10,12 @@
     <string name="image">Imagem</string>
     <string name="title_register">Registros</string>
     <string name="search">Pesquisar</string>
-    <string name="detail">Detalhe</string>
+    <string name="detail">Detalhes</string>
     <string name="settings">Ondernar</string>
     <string name="add">Adicionar</string>
     <string name="hintTitle">Digite o Titulo</string>
     <string name="hintDescription">Digite a Descrição</string>
+    <string name="hintDate">Digite a Data</string>
+    <string name="hintHour">Digite a Hora</string>
+    <string name="hintLocation">Digite o Local</string>
 </resources>

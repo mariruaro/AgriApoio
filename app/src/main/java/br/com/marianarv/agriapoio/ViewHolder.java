@@ -37,16 +37,10 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                            String data,String hour,String location,String description ){
         TextView titleView=(TextView) mView.findViewById(R.id.textTitleView);
         TextView dataView=(TextView) mView.findViewById(R.id.txtDataView);
-        TextView hourView=(TextView) mView.findViewById(R.id.txtHourView);
-        TextView locationView=(TextView) mView.findViewById(R.id.txtLocationView);
-        TextView descriptionView=(TextView) mView.findViewById(R.id.txtDescriptionView);
         ImageView imageView = (ImageView) mView.findViewById(R.id.imageView);
 
         titleView.setText(title);
         dataView.setText(data);
-        hourView.setText(hour);
-        locationView.setText(location);
-        descriptionView.setText(description);
         Picasso.get().load(image).into(imageView);
     }
 

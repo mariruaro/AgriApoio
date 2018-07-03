@@ -37,7 +37,7 @@ public class PostDetailActivity extends AppCompatActivity {
         String hour = getIntent().getStringExtra("hour");
         String location = getIntent().getStringExtra("location");
         String description = getIntent().getStringExtra("description");
-
+        actionBar.setTitle(R.string.detail);
 
         mTittle.setText(title);
         mDate.setText(date);
