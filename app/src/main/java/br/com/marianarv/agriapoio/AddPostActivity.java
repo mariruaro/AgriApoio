@@ -111,6 +111,9 @@ public class AddPostActivity extends AppCompatActivity {
                             String imageUploadId = databaseReference.push().getKey();
 
                             databaseReference.child(imageUploadId).setValue(modelUploadInfo);
+                            Intent intent = new Intent(AddPostActivity.this, PostListActivity.class);
+                            startActivity(intent);
+                            AddPostActivity.this.finish();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
