@@ -97,6 +97,7 @@ public class PostListActivity extends AppCompatActivity {
                                 String mLocation = getItem(position).getLocation();
                                 String mDescription = getItem(position).getDescription();
                                 String mImage = getItem(position).getImage();
+                                String mKey = getItem(position).getKey();
 
                                 Intent intent = new Intent(mView.getContext(),PostDetailActivity.class);
                                 intent.putExtra("image",mImage);
@@ -105,6 +106,7 @@ public class PostListActivity extends AppCompatActivity {
                                 intent.putExtra("hour",mHour);
                                 intent.putExtra("location",mLocation);
                                 intent.putExtra("description",mDescription);
+                                intent.putExtra("key",mKey);
                                 startActivity(intent);
 
                             }
@@ -153,6 +155,7 @@ public class PostListActivity extends AppCompatActivity {
                                 String mLocation = getItem(position).getLocation();
                                 String mDescription = getItem(position).getDescription();
                                 String mImage = getItem(position).getImage();
+                                String mKey = getItem(position).getKey();
 
                                 Intent intent = new Intent(mView.getContext(),PostDetailActivity.class);
                                 intent.putExtra("image",mImage);
@@ -161,6 +164,7 @@ public class PostListActivity extends AppCompatActivity {
                                 intent.putExtra("hour",mHour);
                                 intent.putExtra("location",mLocation);
                                 intent.putExtra("description",mDescription);
+                                intent.putExtra("key",mKey);
                                 startActivity(intent);
 
                             }

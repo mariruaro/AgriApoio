@@ -110,6 +110,8 @@ public class AddPostActivity extends AppCompatActivity {
 
                             String imageUploadId = databaseReference.push().getKey();
 
+                            modelUploadInfo.setKey(imageUploadId);
+
                             databaseReference.child(imageUploadId).setValue(modelUploadInfo);
                         }
                     })

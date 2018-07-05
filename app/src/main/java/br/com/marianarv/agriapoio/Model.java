@@ -7,6 +7,7 @@ public class Model {
     private String hour;
     private String description;
     private String location;
+    private String key;
 
     public Model(){}
 
@@ -65,5 +66,13 @@ public class Model {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }
