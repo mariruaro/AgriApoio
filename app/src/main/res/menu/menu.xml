@@ -14,6 +14,11 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_action_add"/>
     <item
+        android:id="@+id/acction_temp"
+        android:title="@string/temp"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_thermometer"/>
+    <item
         android:id="@+id/acction_settings"
         android:contentDescription="@string/settings"
         android:title="@string/settings"

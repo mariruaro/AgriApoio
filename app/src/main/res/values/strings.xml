@@ -19,4 +19,13 @@
     <string name="hintHour">Digite a Hora</string>
     <string name="hintLocation">Digite o Local</string>
     <string name="delete">Deletar</string>
+    <string name="default_location">Buscando Local</string>
+    <string name="default_temp">NA</string>
+    <string name="change_city_description">Clique aqui para mudar cidade</string>
+    <string name="weather_description">Simbolo do tempo</string>
+    <string name="back_button_description">Voltar tela Temperatura</string>
+    <string name="get_weather">Trocar cidade</string>
+    <string name="default_query">Digite nome da cidade</string>
+    <string name="consult_temp">Consultar Temperatura</string>
+    <string name="change_city">Buscar Cidade</string>
 </resources>

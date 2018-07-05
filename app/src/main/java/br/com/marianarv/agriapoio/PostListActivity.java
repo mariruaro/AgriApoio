@@ -218,6 +218,11 @@ public class PostListActivity extends AppCompatActivity {
             return true;
         }
 
+        if(id==R.id.acction_temp){
+            startActivity(new Intent(PostListActivity.this,WeatherController.class));
+            return true;
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
