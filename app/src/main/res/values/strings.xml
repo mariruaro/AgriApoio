@@ -18,4 +18,5 @@
     <string name="hintDate">Digite a Data</string>
     <string name="hintHour">Digite a Hora</string>
     <string name="hintLocation">Digite o Local</string>
+    <string name="delete">Deletar</string>
 </resources>

@@ -1,5 +1,6 @@
 package br.com.marianarv.agriapoio;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.ActionBar;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -71,7 +73,10 @@ public class PostDetailActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         mDatabaseRef.child(key).removeValue();
-                        Log.d("AgriApoio","deleto");
+                        Toast.makeText(PostDetailActivity.this,"Deletado com sucesso",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(PostDetailActivity.this, PostListActivity.class);
+                        startActivity(intent);
+                        PostDetailActivity.this.finish();
                     }
                 });
             }

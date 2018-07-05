@@ -12,15 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".PostListActivity">
+        </activity>
+        <activity android:name=".PostDetailActivity" />
+        <activity
+            android:name=".AddPostActivity"
+            android:parentActivityName=".PostListActivity" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PostDetailActivity" />
-        <activity android:name=".AddPostActivity"
-            android:parentActivityName=".PostListActivity"/>
     </application>
 
 </manifest>

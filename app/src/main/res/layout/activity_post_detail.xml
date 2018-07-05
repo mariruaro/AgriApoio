@@ -14,8 +14,9 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#fff">
 
         <TextView
@@ -128,8 +129,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/data"
-            android:textSize="18dp"
             android:textColor="@color/dark_gray"
+            android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewDetail" />
@@ -142,8 +143,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/hour"
-            android:textSize="18dp"
             android:textColor="@color/dark_gray"
+            android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtHourViewDetail"
             app:layout_constraintHorizontal_bias="1.0"
@@ -171,8 +172,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/description"
-            android:textSize="18dp"
             android:textColor="@color/dark_gray"
+            android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -186,13 +187,17 @@
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:text="Button"
+            android:layout_marginTop="8dp"
+            android:text="@string/delete"
+            android:background="#FF0000"
+            android:textColor="#fff"
+            android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtDescriptionViewDetail" />
+            app:layout_constraintTop_toBottomOf="@+id/txtDescriptionViewDetail"
+            app:layout_constraintVertical_bias="1.0" />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.v7.widget.CardView>
