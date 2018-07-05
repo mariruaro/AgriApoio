@@ -29,7 +29,6 @@ import cz.msebera.android.httpclient.Header;
 
 public class WeatherController extends AppCompatActivity {
 
-    // Constants:
     final int REQUEST_CODE =123;
     final String WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather";
     // App ID to use OpenWeather data
@@ -43,8 +42,6 @@ public class WeatherController extends AppCompatActivity {
     //String LOCATION_PROVIDER = LocationManager.GPS_PROVIDER;
     String LOCATION_PROVIDER = LocationManager.NETWORK_PROVIDER;
 
-
-    // Member Variables:
     TextView mCityLabel;
     ImageView mWeatherImage;
     TextView mTemperatureLabel;
@@ -80,7 +77,6 @@ public class WeatherController extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("Clima", "onResume() called");
 
         Intent myIntent = getIntent();
         String city = myIntent.getStringExtra("City");
@@ -88,7 +84,6 @@ public class WeatherController extends AppCompatActivity {
         if(city != null){
             getWeatherForNewCity(city);
         }else{
-            Log.d("Clima", "Getting weather for current location");
             getWeatherForCurrentLocation();
         }
     }
@@ -158,7 +153,7 @@ public class WeatherController extends AppCompatActivity {
         }
     }
 
-    
+
     private void letsDoSomeNetworking(RequestParams params){
         AsyncHttpClient client = new AsyncHttpClient();
 
