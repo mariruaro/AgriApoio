@@ -1,6 +1,6 @@
 # AgriApoio
 
-Proposta
+Proposta Aplicativo Android
 
 Desenvolver um aplicativo que auxilia agricultores a manter registros para manutenção de suas plantações e consultar a temperatura.  
 
